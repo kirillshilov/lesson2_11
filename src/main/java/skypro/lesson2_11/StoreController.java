@@ -7,26 +7,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
+
+import java.util.List;
 
 
 @RestController
 @RequestMapping("/store/order")
 
 public class StoreController {
-    private final StoreService storeService;
+    private final Servise servise;
 
-    private StoreController(StoreService storeService) {
-        this.storeService = storeService;
+    public StoreController(Servise servise) {
+        this.servise = servise;
     }
 
     @GetMapping("/add")
     public String addItem(@RequestParam int item) {
-        return storeService.addItem(item);
+        return servise.addItem(item);
     }
 
     @GetMapping("/get")
-    public String getItem() {
-        return storeService.getAllItem().toString();
+    public List getItem() {
+        return servise.getAllItem();
     }
 }

@@ -3,10 +3,10 @@ package skypro.lesson2_11;
 import java.util.Objects;
 
 public class Item {
-    String number;
+    int number;
 
     public Item(int number) {
-        this.number = String.valueOf(number);
+        this.number = number;
     }
 
     @Override
