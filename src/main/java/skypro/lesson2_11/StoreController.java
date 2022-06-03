@@ -27,7 +27,7 @@ public class StoreController {
     }
 
     @GetMapping("/get")
-    public List getItem() {
+    public List <Item> getItem() {
         return servise.getAllItem();
     }
 }

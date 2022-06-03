@@ -9,16 +9,12 @@ import java.util.List;
 @Component
 @SessionScope
 public class Store {
-    private final List <Item> itemList = new ArrayList<>() {
-    };
+    private final List <Item> itemList = new ArrayList<>();
 
-    public List getItemList() {
+    public List <Item> getItemList() {
         return itemList;
     }
     public void addItem (int one) {
         itemList.add(new Item(one));
     }
-
-
-
 }

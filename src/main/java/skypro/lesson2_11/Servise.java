@@ -18,7 +18,7 @@ public class Servise {
         return ("Вещь добавлена");
     }
 
-    public List getAllItem() {
+    public List <Item> getAllItem() {
         return store.getItemList();
     }
 

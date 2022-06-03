@@ -3,9 +3,17 @@ package skypro.lesson2_11;
 import java.util.Objects;
 
 public class Item {
-    int number;
+   private int number;
 
     public Item(int number) {
+        this.number = number;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
         this.number = number;
     }
 
